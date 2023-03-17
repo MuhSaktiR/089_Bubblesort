@@ -24,7 +24,7 @@ void input() {		// prosedur untuk input
 	}
 }
 
-void BubbleSortArray() {		//prosedur untuk mengurutkan array dengan metide bubble sort
+void BubbleSortArray() {		//prosedur untuk mengurutkan array dengan metode bubble sort
 	for (int i = 1; i < n; i++) {		// Looping dengan i dimulai dari 1 hingga n-1
 		for (int j = 0; j < n - i; j++) {		// Looping dengan j dimulai dari 0 hingga n-i
 			if (a[j] > a[j + 1]) {		//jika nilai pada a[j] lebih besar dari a[j+1]
@@ -33,5 +33,15 @@ void BubbleSortArray() {		//prosedur untuk mengurutkan array dengan metide bubbl
 				a[j + 1] = temp;		//assign nilai temp ke a[j+1]
 			}
 		}
+	}
+}
+
+void unsorted() {
+	cout << endl;		//output baris kosong
+	cout << "=================================" << endl; //Output Baris Kosong
+	cout << "Element Array yang belum tersusun" << endl;	//Output Baris layar
+	cout << "=================================" << endl; //Output Baris Kosong
+	for (int j = 0; j < n; j++) {
+		cout << a[j] << endl;
 	}
 }
